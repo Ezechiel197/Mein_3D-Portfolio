@@ -1,0 +1,16 @@
+[build]
+  command = "npm run build"
+  publish = "dist/danielou-portfolio/browser"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+  [functions.esbuild]
+    target = "node18"
+    format = "esm"
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/ssr"
+  status = 404
