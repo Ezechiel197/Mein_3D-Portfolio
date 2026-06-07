@@ -61,6 +61,9 @@ Make sure you have Node.js and npm installed on your machine.
 
 ## 🤖 Upcoming Features: AI-Powered Guide!
 
+## :man_technologist: **Author**
+**Ezechiel Tonkeme**
+
 The next evolution of this project is the integration of a **conversational AI**. Soon, you will be able to interact with an intelligent guide directly within the scene.
 
 Imagine asking questions like:
