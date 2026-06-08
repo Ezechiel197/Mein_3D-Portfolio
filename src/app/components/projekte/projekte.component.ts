@@ -30,6 +30,11 @@ export class ProjekteComponent implements OnInit, OnDestroy {
       title: 'Ausgewählte Projekte',
       projects: [
         {
+          name: 'RTOS_Kernel_STM32',
+          description: 'Dieses Projekt implementiert einen funktionalen Echtzeit-Kernel auf einem STM32L4-Mikrocontroller. Der Kernel nutzt ein präemptives Round-Robin-Scheduling-Verfahren mit konfigurierbaren Zeitscheiben (Time-Slicing). Er verwaltet Task-Zustände (Running, Ready, Blocked) und stellt eine präzise zeitliche Steuerung über einen dedizierten SysTick-Timer-Handler bereit. Wenn kein Anwendertask bereit ist, übernimmt automatisch ein vordefinierter Idle-Task die CPU-Kontrolle, um einen stabilen Systemzustand zu gewährleisten.',
+          tags: [ 'C']
+        },
+        {
           name: 'Mein 3D-Portfolio',
           description: 'Dieses interaktive 3D-Portfolio stellt eine innovative Verschmelzung moderner Webtechnologien dar, bei der ein robustes Angular-Frontend mit der grafischen Leistungsfähigkeit von Three.js (WebGL) kombiniert wird. Anstelle eines klassischen Lebenslaufs bietet das Projekt eine dynamische, stilisiert generierte nächtliche Bahnhofsszene, die vollständig interaktiv erkundet werden kann. Zu den technischen Highlights gehören eine benutzerdefinierte Maussteuerung, ein dynamisches Laden von Inhalten beim Klick auf interaktive Schilder sowie eine innovative Angular-zu-Three.js-Schnittstelle, die Angular-Komponenten via html2canvas als Texturen auf 3D-Objekten rendert. Ergänzt durch Server-Side Rendering (SSR) für optimierte Ladezeiten und SEO sowie eine detailreiche Umgebung mit animierten Elementen und atmosphärischer Beleuchtung, demonstriert das Projekt tiefgehendes Know-how im Bereich der kreativen Frontendentwicklung und modernen Webarchitektur.',
           tags: [ 'JavaScript', 'HTML','Angular']
@@ -86,6 +91,11 @@ export class ProjekteComponent implements OnInit, OnDestroy {
     en: {
       title: 'Featured Projects',
       projects: [
+        {
+          name: 'RTOS_Kernel_STM32',
+          description: 'This repository contains a lightweight, custom preemptive Real-Time Operating System (RTOS) kernel tailored for ARM Cortex-M4 microcontrollers (STM32L4xx). The operating system implements a preemptive Round-Robin scheduling algorithm with configurable time slices. It handles distinct task states (Running, Ready, Blocked) and provides deterministic delay tracking via the SysTick timer. An integrated Idle task guarantees continuous and safe CPU execution even when all user application tasks are currently blocked.',
+          tags: [ 'C']
+        },
         {
           name: 'Mein 3D-Portfolio',
           description: 'This interactive 3D portfolio represents an innovative fusion of modern web technologies, combining a robust Angular frontend with the graphical capabilities of Three.js (WebGL). Instead of a traditional resume, the project features a dynamic, procedurally generated night train station scene that allows for fully interactive exploration. Technical highlights include custom mouse controls, dynamic content loading via interactive signs, and an innovative Angular-to-Three.js bridge that renders Angular components onto 3D objects as textures using html2canvas. Supported by Server-Side Rendering (SSR) for optimized loading performance and SEO, as well as a highly detailed environment with animated elements and atmospheric lighting, this project demonstrates deep expertise in creative frontend development and modern web architecture.',
